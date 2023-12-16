@@ -1,0 +1,29 @@
+.bg2 {
+  height: calc(100vh - 70px);
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f7fa;
+}
+
+.book-details {
+  display: flex;
+  justify-content: center;
+  /* border: solid red; */
+}
+
+.book-img {
+  height: 200px;
+  margin-right: 20px;
+}
+
+.wraper {
+  width: 80%;
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+}

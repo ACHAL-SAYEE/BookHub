@@ -1,0 +1,38 @@
+.nav-content {
+  display: flex;
+  /* border: solid red; */
+  /* box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75); */
+/* background-color: #E4E7EB; */
+  justify-content: space-between;
+  padding: 10px 30px 0px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #64748b;
+}
+
+.activeTab{
+    color: #0284C7;
+}
+
+.logout-desktop-btn {
+  background-color: #0284c7;
+  color: white;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-right-items {
+  display: flex;
+  align-items: center;
+}

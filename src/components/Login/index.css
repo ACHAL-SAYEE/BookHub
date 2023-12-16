@@ -1,0 +1,52 @@
+.bg {
+  height: 100vh;
+  display: flex;
+  padding-right: 89px;
+  align-items: center;
+  align-content: space-around;
+  /* border: solid green; */
+  gap: 72px;
+}
+
+.login-image {
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: solid red; */
+  flex-grow: 1;
+  /* height: 500px; */
+}
+
+.InputField {
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+  /* border: solid pink; */
+  width: 250px;
+}
+
+.inputEl {
+  height: 45px;
+  margin-top: 5px;
+}
+
+.loginBtn {
+  width: 250px;
+  height: 30px;
+  flex-shrink: 0;
+  margin-top: 10px;
+  background-color: #0284C7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.loginBtn:hover {
+  background-color: #000000;
+}

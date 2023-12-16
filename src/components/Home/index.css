@@ -1,0 +1,28 @@
+.bg2 {
+  height: 100vh;
+}
+
+.HomePageContent {
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #f8fafc;
+}
+
+.top-books-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.find-books-button {
+  background-color: #0284c7;
+  color: white;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.book-image {
+  width: 200px;
+}
