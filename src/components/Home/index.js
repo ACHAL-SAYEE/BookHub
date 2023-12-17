@@ -22,8 +22,9 @@ const settings = {
   dots: false,
   infinite: false,
   speed: 500,
-  slidesToShow: 4,
+  slidesToShow: 5,
   slidesToScroll: 1,
+  //   centerMode: true,
   responsive: [
     {
       breakpoint: 1024,
@@ -54,7 +55,13 @@ function Arrow(props) {
   return (
     <div
       className={className}
-      style={{...style, display: 'block', background: '#989898'}}
+      style={{
+        ...style,
+        display: 'block',
+        background: '#989898',
+
+        borderRadius: '100px',
+      }}
       onClick={onClick}
     />
   )
@@ -129,23 +136,25 @@ const Home = () => {
     const bookDetails = data.books
     console.log(data)
     return (
-      <Slider {...settings}>
+      <Slider {...settings} className="yu">
+        {/* <ul className="slick-items"> */}
         {bookDetails.map(eachLogo => {
           const {id, cover_pic} = eachLogo
           return (
-            <Link to={`/books/${id}`}>
-              <li className="slick-item" key={id}>
+            <Link to={`/books/${id}`} className="a" key={id}>
+              <li className="slick-item">
                 <img
                   className="book-image"
                   src={cover_pic}
                   alt="company logo"
                 />
-                <h1>{eachLogo.title}</h1>
-                <p>{eachLogo.author_name}</p>
+                <h1 className="bookTitle">{eachLogo.title}</h1>
+                <p className="authorName">{eachLogo.author_name}</p>
               </li>
             </Link>
           )
         })}
+        {/* </ul> */}
       </Slider>
     )
   }
